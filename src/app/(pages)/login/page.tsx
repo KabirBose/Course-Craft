@@ -6,12 +6,8 @@ export default function () {
       <h1>Login</h1>
 
       <form className="flex flex-col gap-5 justify-center items-center">
-        <input
-          className="bg-gray-100"
-          placeholder="Student Email"
-          type="email"
-        />
-        <input className="bg-gray-100" placeholder="Password" type="password" />
+        <input placeholder="Student Email" type="email" />
+        <input placeholder="Password" type="password" />
       </form>
 
       <Link href="/register">No account? Register</Link>
