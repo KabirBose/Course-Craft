@@ -13,7 +13,9 @@ export default function () {
         <input placeholder="Password" type="password" />
       </form>
 
-      <Link href="/login">Have an account? Login</Link>
+      <Link href="/login">
+        Have an account? <span className="underline">Login</span>
+      </Link>
     </div>
   );
 }

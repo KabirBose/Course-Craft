@@ -10,7 +10,9 @@ export default function () {
         <input placeholder="Password" type="password" />
       </form>
 
-      <Link href="/register">No account? Register</Link>
+      <Link href="/register">
+        No account? <span className="underline">Register</span>
+      </Link>
     </div>
   );
 }
