@@ -5,7 +5,9 @@ export default function () {
     <div className="flex flex-col gap-5 justify-center items-center h-[100vh]">
       <h1>Course Craft</h1>
 
-      <Link href="/register">Register</Link>
+      <Link href="/register">
+        <button>Register</button>
+      </Link>
     </div>
   );
 }

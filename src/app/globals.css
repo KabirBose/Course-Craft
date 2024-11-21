@@ -2,12 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 25px;
+}
+h2 {
+  font-size: 20px;
+}
+
 input {
   background-color: #f3f4f6;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 input:focus {
   outline: none;
   border: none;
+}
+
+button {
+  background-color: #f3f4f6;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #7d7d7d;
 }
 
 .sx-react-calendar-wrapper {
