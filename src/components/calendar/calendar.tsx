@@ -8,9 +8,8 @@ import {
   createViewWeek,
 } from "@schedule-x/calendar";
 import "@schedule-x/theme-default/dist/calendar.css";
-import { createDragAndDropPlugin } from "@schedule-x/drag-and-drop";
 import { createEventModalPlugin } from "@schedule-x/event-modal";
-import { createResizePlugin } from "@schedule-x/resize";
+import { createEventRecurrencePlugin } from "@schedule-x/event-recurrence";
 
 export default function Calendar() {
   const calendar: CalendarApp = useCalendarApp({
@@ -22,13 +21,15 @@ export default function Calendar() {
         start: "2025-01-01 00:00",
         end: "2025-01-01 03:00",
       },
+      {
+        id: Math.random(),
+        title: "Python",
+        start: "2025-01-01 03:30",
+        end: "2025-01-01 05:00",
+      },
     ],
     selectedDate: "2025-01-01",
-    plugins: [
-      createDragAndDropPlugin(),
-      createEventModalPlugin(),
-      createResizePlugin(),
-    ],
+    plugins: [createEventModalPlugin(), createEventRecurrencePlugin()],
   });
 
   return (
