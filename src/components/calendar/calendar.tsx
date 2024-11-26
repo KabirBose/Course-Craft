@@ -24,8 +24,8 @@ export default function Calendar() {
       {
         id: Math.random(),
         title: "Python",
-        start: "2025-01-01 03:30",
-        end: "2025-01-01 05:00",
+        start: "2025-01-03 03:30",
+        end: "2025-01-03 05:00",
       },
     ],
     selectedDate: "2025-01-01",
